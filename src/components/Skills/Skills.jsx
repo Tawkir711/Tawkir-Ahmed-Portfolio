@@ -6,7 +6,7 @@ const Skills = () => {
     <div className=" min-h-screen  flex flex-col justify-center items-center lg:gap-8 my-2 px-5 bg-[#F0F0F6]">
       <h2 className="text-center mb-20 text-3xl font-semibold ">My Skills</h2>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-7 px-5">
+      <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-7 px-5">
         <div className="flex ">
           <img
             className="h-[50px]"
@@ -77,7 +77,7 @@ const Skills = () => {
             src="https://i.postimg.cc/bv7NLWz6/Vercel-favicon.png"
             alt=""
           />
-          <p className="text-2xl font-bold ml-3 mt-3">Vercel</p>
+          <p className="text-2xl font-bold ml-3 mt-3 mb-3">Vercel</p>
         </div>
       </div>
     </div>
