@@ -7,48 +7,41 @@ const Navbar = () => {
       <li>
         <NavLink
           to={"/"}
-          
-        className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
-          }>
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline text-white font-bold bg-amber-400"
+              : "font-bold"
+          }
+        >
           Home
         </NavLink>
       </li>
       <li>
         <NavLink
-          to={"/aboutMe"}
-          
- className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
-          }       >
-          About Me
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to={"/education"}
+          to={"/skill"}
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline text-white font-bold bg-amber-400"
+              : "font-bold"
           }
         >
-          Education
+          Skills
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to={"/services"}
-          
-className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
-          }        >
-          Services
-        </NavLink>
-      </li>
+
       <li>
         <NavLink
           to={"/experience"}
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline text-white font-bold bg-amber-400"
+              : "font-bold"
           }
         >
           Experience
@@ -56,12 +49,44 @@ className={({ isActive, isPending }) =>
       </li>
       <li>
         <NavLink
-          to={"/portfolio"}
+          to={"/projects"}
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline text-white font-bold bg-amber-400"
+              : "font-bold"
           }
         >
-          Portfolio
+          Projects
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/education"}
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline text-white font-bold bg-amber-400"
+              : "font-bold"
+          }
+        >
+          Education
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/contact"}
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "underline text-white font-bold bg-amber-400"
+              : "font-bold"
+          }
+        >
+          Contact
         </NavLink>
       </li>
     </>
@@ -93,7 +118,7 @@ className={({ isActive, isPending }) =>
             {NavLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Tawkir Ahmed</a>
+        <a className="btn btn-ghost text-xl">Portfolio</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-2">{NavLinks}</ul>
