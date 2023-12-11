@@ -7,40 +7,28 @@ const Navbar = () => {
       <li>
         <NavLink
           to={"/"}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white bg-primary hover:bg-orange-300 "
-              : ""
-          }
-        >
+          
+        className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
+          }>
           Home
         </NavLink>
       </li>
       <li>
         <NavLink
-          to={"/"}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white bg-primary hover:bg-orange-300 "
-              : ""
-          }
-        >
+          to={"/aboutMe"}
+          
+ className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
+          }       >
           About Me
         </NavLink>
       </li>
       <li>
         <NavLink
-          to={"/"}
+          to={"/education"}
           className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white bg-primary hover:bg-orange-300 "
-              : ""
+            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
           }
         >
           Education
@@ -48,27 +36,19 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to={"/"}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white bg-primary hover:bg-orange-300 "
-              : ""
-          }
-        >
+          to={"/services"}
+          
+className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
+          }        >
           Services
         </NavLink>
       </li>
       <li>
         <NavLink
-          to={"/"}
+          to={"/experience"}
           className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white bg-primary hover:bg-orange-300 "
-              : ""
+            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
           }
         >
           Experience
@@ -78,11 +58,7 @@ const Navbar = () => {
         <NavLink
           to={"/portfolio"}
           className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white bg-primary hover:bg-orange-300 "
-              : ""
+            isPending ? "pending" : isActive ? "underline text-white font-bold bg-amber-400" : "font-bold"
           }
         >
           Portfolio
@@ -91,7 +67,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -112,7 +88,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-2"
           >
             {NavLinks}
           </ul>
@@ -120,9 +96,7 @@ const Navbar = () => {
         <a className="btn btn-ghost text-xl">Tawkir Ahmed</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-2">
-          {NavLinks}
-        </ul>
+        <ul className="menu menu-horizontal px-1 gap-2">{NavLinks}</ul>
       </div>
     </div>
   );
