@@ -3,12 +3,17 @@ import { NavLink } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <section id="projects">
-      <h1 className="text-center font-semibold text-4xl pt-4 mb-4  md:pt-10 md:mb-4">
+    <section id="projects" className="bg-base-200 my-2">
+      <h1
+        className="text-center font-semibold text-4xl pt-4 mb-4  md:pt-10 md:mb-4"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         My Projects
       </h1>
       <div
-        className=" min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center  px-5 bg-backgroundColor"
+        className=" min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center  px-5 "
         id="projects"
       >
         <div className="grid grid-cols-3 gap-10 pb-5 lg:pb-0">

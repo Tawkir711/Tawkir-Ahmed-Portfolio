@@ -34,13 +34,7 @@ export const Contacts = () => {
   };
 
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="1000"
-      id="contact"
-      className="mt-10 bg-base-200 py-3"
-    >
+    <div id="contact" className="mt-10 bg-base-200 py-3">
       <h2
         className="text-3xl text-center my-6 font-bold"
         data-aos="fade-right"
@@ -50,6 +44,9 @@ export const Contacts = () => {
         Contact with me
       </h2>
       <form
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
         ref={form}
         onSubmit={sendEmail}
         className="md:w-3/4 lg:w-1/2 mx-auto"

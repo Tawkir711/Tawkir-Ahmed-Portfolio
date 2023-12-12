@@ -3,9 +3,6 @@ import React from 'react';
 const Experience = () => {
   return (
     <div
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1000"
       id="experience"
       className="p-2 bg-slate-100"
     >
@@ -20,7 +17,7 @@ const Experience = () => {
       <div className="md:flex md:gap-10 ">
         <div
           className="flex-1"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
@@ -34,7 +31,7 @@ const Experience = () => {
         </div>
         <div
           className="md:mt-20 mt-4 flex-1"
-          data-aos="fade-left"
+          data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
