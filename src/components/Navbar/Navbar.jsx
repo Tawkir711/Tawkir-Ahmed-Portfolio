@@ -4,72 +4,37 @@ import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
   const NavLinks = (
     <>
-      <li>
+      <li className="font-semibold">
         <HashLink
           to={"#home"}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white font-bold bg-amber-400"
-              : "font-bold"
-          }
         >
           Home
         </HashLink>
       </li>
-      <li>
+      <li className="font-semibold">
         <HashLink
           to={"#skill"} spy={true} smooth={true} offset={50} duration={500}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white font-bold bg-amber-400"
-              : "font-bold"
-          }
         >
           Skills
         </HashLink>
       </li>
-      <li>
+      <li className="font-semibold">
         <HashLink
           to={"#projects"} spy={true} smooth={true} offset={50} duration={500}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white font-bold bg-amber-400"
-              : "font-bold"
-          }
         >
           Projects
         </HashLink>
       </li>
-      <li>
+      <li className="font-semibold">
         <HashLink
           to={"#experience"} spy={true} smooth={true} offset={50} duration={500}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white font-bold bg-amber-400"
-              : "font-bold"
-          }
         >
-          Experience
+          Experience / Education
         </HashLink>
       </li>
-      <li>
+      <li className="font-semibold">
         <HashLink
           to={"#contact"} spy={true} smooth={true} offset={50} duration={500}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white font-bold bg-amber-400"
-              : "font-bold"
-          }
         >
           Contact
         </HashLink>
