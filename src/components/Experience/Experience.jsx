@@ -2,12 +2,28 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <div id="experience" className="p-2 bg-slate-100">
-      <h3 className="font-bold text-center text-2xl my-6">
+    <div
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      id="experience"
+      className="p-2 bg-slate-100"
+    >
+      <h3
+        className="font-bold text-center text-2xl my-6"
+        data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         Experience / Education
       </h3>
       <div className="md:flex md:gap-10 ">
-        <div className="flex-1">
+        <div
+          className="flex-1"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <figure>
             <img
               src="https://i.postimg.cc/ydzpNbr2/IMG20220330215302-removebg-preview.png"
@@ -16,7 +32,12 @@ const Experience = () => {
             />
           </figure>
         </div>
-        <div className="md:mt-20 mt-4 flex-1">
+        <div
+          className="md:mt-20 mt-4 flex-1"
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h2 className="text-xl font-bold mb-4">Name: Tawkir Ahmed.</h2>
           <p className="mb-4">
             <b>Birth Day</b>: 17-11-2002

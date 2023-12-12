@@ -7,9 +7,17 @@ const Projects = () => {
       <h1 className="text-center font-semibold text-4xl pt-4 mb-4  md:pt-10 md:mb-4">
         My Projects
       </h1>
-      <div className=" min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center  px-5 bg-backgroundColor" id="projects">
+      <div
+        className=" min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center  px-5 bg-backgroundColor"
+        id="projects"
+      >
         <div className="grid grid-cols-3 gap-10 pb-5 lg:pb-0">
-          <div className="card w-64 md:w-80 mx-4 lg:w-96  shadow-xl">
+          <div
+            className="card w-64 md:w-80 mx-4 lg:w-96  shadow-xl"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <figure>
               <img
                 src="https://i.postimg.cc/SRthXDGh/Screenshot-2023-12-11-214841.png"
@@ -40,7 +48,12 @@ const Projects = () => {
           </div>
         </div>
         <div className="grid grid-cols-3 gap-10 pb-5 lg:pb-0">
-          <div className="card w-64 md:w-80 mx-4 lg:w-96  shadow-xl">
+          <div
+            className="card w-64 md:w-80 mx-4 lg:w-96  shadow-xl"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <figure>
               <img
                 src="https://i.postimg.cc/k5b85Hqx/Screenshot-2023-12-11-220535.png"
@@ -75,7 +88,12 @@ const Projects = () => {
           </div>
         </div>
         <div className="grid grid-cols-3 gap-10 pb-5 lg:pb-0">
-          <div className="card w-64 md:w-80 mx-4 lg:w-96  shadow-xl">
+          <div
+            className="card w-64 md:w-80 mx-4 lg:w-96  shadow-xl"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <figure>
               <img
                 src="https://i.postimg.cc/cH7FvC0M/Screenshot-2023-12-11-221118.png"

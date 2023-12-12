@@ -34,8 +34,21 @@ export const Contacts = () => {
   };
 
   return (
-    <div id="contact" className="my-10 bg-base-200 py-3">
-      <h2 className="text-3xl text-center my-6 font-bold">Contact with me</h2>
+    <div
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      id="contact"
+      className="mt-10 bg-base-200 py-3"
+    >
+      <h2
+        className="text-3xl text-center my-6 font-bold"
+        data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
+        Contact with me
+      </h2>
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -66,12 +79,12 @@ export const Contacts = () => {
         </label>
         <textarea
           name="message"
-          required 
+          required
           placeholder="Your Message"
           className="textarea textarea-bordered textarea-lg w-full max-w-screen-xl"
         />
         <input
-          type="submit" 
+          type="submit"
           value="Send Message"
           className="btn bg-amber-400 text-white"
         />
