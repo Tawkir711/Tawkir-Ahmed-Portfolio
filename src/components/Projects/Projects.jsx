@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <h1 className="text-center font-semibold text-4xl pt-4 mb-4  md:pt-10 md:mb-4">
         My Projects
       </h1>
-      <div className=" min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center  px-5 bg-backgroundColor">
+      <div className=" min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center  px-5 bg-backgroundColor" id="projects">
         <div className="grid grid-cols-3 gap-10 pb-5 lg:pb-0">
           <div className="card w-64 md:w-80 mx-4 lg:w-96  shadow-xl">
             <figure>

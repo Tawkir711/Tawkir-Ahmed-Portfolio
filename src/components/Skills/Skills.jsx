@@ -3,7 +3,7 @@ import React from 'react';
 const Skills = () => {
   
   return (
-    <div className=" min-h-screen  flex flex-col justify-center items-center lg:gap-8 my-2 px-5 bg-[#F0F0F6]">
+    <div className=" min-h-screen  flex flex-col justify-center items-center lg:gap-8 my-2 px-5 bg-[#F0F0F6]" id='skill'>
       <h2 className="text-center mb-20 text-3xl font-semibold ">My Skills</h2>
 
       <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-7 px-5">

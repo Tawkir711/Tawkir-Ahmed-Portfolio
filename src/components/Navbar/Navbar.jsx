@@ -1,12 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const NavLinks = (
     <>
       <li>
-        <NavLink
-          to={"/"}
+        <HashLink
+          to={"#home"}
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -16,11 +16,11 @@ const Navbar = () => {
           }
         >
           Home
-        </NavLink>
+        </HashLink>
       </li>
       <li>
-        <NavLink
-          to={"/skill"}
+        <HashLink
+          to={"#skill"} spy={true} smooth={true} offset={50} duration={500}
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -30,26 +30,11 @@ const Navbar = () => {
           }
         >
           Skills
-        </NavLink>
-      </li>
-
-      <li>
-        <NavLink
-          to={"/experience"}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline text-white font-bold bg-amber-400"
-              : "font-bold"
-          }
-        >
-          Experience
-        </NavLink>
+        </HashLink>
       </li>
       <li>
-        <NavLink
-          to={"/projects"}
+        <HashLink
+          to={"#projects"} spy={true} smooth={true} offset={50} duration={500}
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -59,11 +44,11 @@ const Navbar = () => {
           }
         >
           Projects
-        </NavLink>
+        </HashLink>
       </li>
       <li>
-        <NavLink
-          to={"/education"}
+        <HashLink
+          to={"#experience"} spy={true} smooth={true} offset={50} duration={500}
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -72,12 +57,12 @@ const Navbar = () => {
               : "font-bold"
           }
         >
-          Education
-        </NavLink>
+          Experience
+        </HashLink>
       </li>
       <li>
-        <NavLink
-          to={"/contact"}
+        <HashLink
+          to={"#contact"} spy={true} smooth={true} offset={50} duration={500}
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -87,12 +72,12 @@ const Navbar = () => {
           }
         >
           Contact
-        </NavLink>
+        </HashLink>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100 ">
+    <div className="navbar bg-base-100 sticky top-0 z-10 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
