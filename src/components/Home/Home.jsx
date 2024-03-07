@@ -3,7 +3,6 @@ import { HiArrowSmallDown } from "react-icons/hi2";
 import { BsArrowRight } from "react-icons/bs";
 import Skills from '../Skills/Skills';
 import { HashLink } from 'react-router-hash-link';
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { Typewriter } from 'react-simple-typewriter'
 
 
@@ -56,7 +55,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="py-6">
-              Hello Sir, I am Tawkir Ahmed, a React front-end developer with
+              Hello, I'm Tawkir Ahmed, a React front-end developer with
               knowledge of full-stack development. Over the past six months, I
               have been honing my skills in web development, specializing in
               React.js for front-end development. I also possess knowledge of

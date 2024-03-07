@@ -131,6 +131,33 @@ const Projects = () => {
                 </NavLink>
               </div>
             </div>
+            <div className="card-body">
+              <h2 className="card-title">MeetWave</h2>
+              <p>
+                We will build a MERN stack project, an online meeting platform.
+                In this platform, the user will be able to create a meeting for
+                his/her team or he/she will be able to join a meeting with their
+                team. In this meeting, they will be able to do live video
+                conferencing, audio conferencing, live chatting, and many more.
+              </p>
+              <div className="card-actions justify-end">
+                <NavLink to={"https://meet-wave.vercel.app/"}>
+                  <div className="badge badge-outline">
+                    <button>Live Link</button>
+                  </div>
+                </NavLink>
+                <NavLink to={"https://github.com/Ashik-Himel/meet-wave-client"}>
+                  <div className="badge badge-outline">
+                    <button>Client Code</button>
+                  </div>
+                </NavLink>
+                <NavLink to={"https://github.com/Ashik-Himel/meet-wave-server"}>
+                  <div className="badge badge-outline">
+                    <button>Server Code</button>
+                  </div>
+                </NavLink>
+              </div>
+            </div>
           </div>
         </div>
       </div>
