@@ -131,6 +131,23 @@ const Projects = () => {
                 </NavLink>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-3 gap-10 mt-3 pb-5 lg:pb-0">
+          <div
+            className="card w-64 md:w-80 mx-4 lg:w-96  shadow-xl"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            <figure>
+              <img
+                src="https://i.postimg.cc/zX04mrB9/Screenshot-2024-03-07-102054.png"
+                alt="Shoes"
+                className="transform transition-transform duration-300 hover:scale-110 rounded-md cursor-pointer"
+              />
+            </figure>
+
             <div className="card-body">
               <h2 className="card-title">MeetWave</h2>
               <p>

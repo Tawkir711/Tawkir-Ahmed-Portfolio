@@ -83,7 +83,7 @@ export const Contacts = () => {
         <input
           type="submit"
           value="Send Message"
-          className="btn bg-amber-400 text-white"
+          className="btn bg-amber-400 text-white ml-52"
         />
       </form>
     </div>
